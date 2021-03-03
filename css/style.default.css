@@ -54,11 +54,11 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-  background: url(../img/guia_gif.gif);
   background-color: #1a2129;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
 }
 /*
 .fullscreen-bg {
