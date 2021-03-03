@@ -100,26 +100,45 @@ function goback() {
     "Klicke auf verschiedene Stellen auf dem Bild, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.";
 }
 
-function changeImageLinks(){
-    document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
-    document.getElementById("vib").play();
+function changeImageLinks() {
+  document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
+  document.getElementById("vib").play();
 }
 
-function changeImageRechts(){
+function changeImageRechts() {
   document.getElementById("imgPrototyp").src = "img/rechts_bauchtasche.png";
   document.getElementById("vib").play();
-
 }
-function changeImageMitte(){
+function changeImageMitte() {
   document.getElementById("imgPrototyp").src = "img/mitte_bauchtasche.png";
   document.getElementById("vib").play();
 }
 
-function richtig(){
-    document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
-    document.getElementById("vib").play();
+function richtig() {
+  document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
+  document.getElementById("vib").play();
 }
-function falsch(){
-    document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
-    document.getElementById("vib").play();
+function falsch() {
+  document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
+  document.getElementById("vib").play();
+}
+
+let gifOn1 = false;
+
+function changeGif1() {
+  if (gifOn1 == true) {
+    document.getElementById("gif1").src = "img/shopping-cart.svg";
+    gifOn1 = false;
+  } else {
+    document.getElementById("gif1").src = "img/shopping-cart.gif";
+    gifOn1 = true;
+  }
+}
+
+function changeGif2() {
+  if (document.getElementById("gif2").src == "img/flying.gif") {
+    document.getElementById("gif2").src = "img/flying.svg";
+  } else {
+    document.getElementById("gif2").src = "img/flying.gif";
+  }
 }

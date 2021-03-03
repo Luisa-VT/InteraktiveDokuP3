@@ -144,7 +144,7 @@ body {
   background-color: #425463;
   opacity: 70%;
 }
-.btnRichtig{
+.btnRichtig {
   position: absolute;
   top: 70%;
   left: 25%;
@@ -162,7 +162,7 @@ body {
   opacity: 70%;
 }
 
-.btnFalsch{
+.btnFalsch {
   position: absolute;
   top: 70%;
   left: 75%;
@@ -175,12 +175,12 @@ body {
   color: white;
   background-color: #232d36;
 }
-.btnFalsch:hover {
-  background-color: #4c5e6e;
-  opacity: 70%;
-}
+
 .bottomnavbar {
   background-color: #1a2128;
+  color: #c8e2ed;
+  text-align: center;
+  bottom: 50;
   overflow: hidden;
   position: fixed;
   bottom: 0;
@@ -433,7 +433,6 @@ h6,
 
 .image {
   opacity: 0.1;
-  display: flex;
   width: 80%;
   height: auto;
   transition: 0.5s ease;
@@ -465,9 +464,13 @@ h6,
   bottom: 0;
   background-color: #ef4b37;
   transition: 0.4s;
+  color: #c8e2ed;
+  text-align: center;
 }
 
 .slider:before {
+  color: #c8e2ed;
+  text-align: center;
   position: absolute;
   content: "";
   height: 42px;

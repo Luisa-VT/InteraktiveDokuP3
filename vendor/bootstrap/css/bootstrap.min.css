@@ -165,7 +165,7 @@ a:not([href]):not([tabindex]) {
 }
 a:not([href]):not([tabindex]):focus,
 a:not([href]):not([tabindex]):hover {
-  color: inherit;
+  color: #c8e2ed;
   text-decoration: none;
 }
 a:not([href]):not([tabindex]):focus {
@@ -995,6 +995,7 @@ pre code {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+    position: relative;
   }
   .col-md-7 {
     -ms-flex: 0 0 58.333333%;
@@ -1156,6 +1157,7 @@ pre code {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
+    position: relative;
   }
   .col-lg-5 {
     -ms-flex: 0 0 41.666667%;
@@ -1166,6 +1168,7 @@ pre code {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+    position: relative;
   }
   .col-lg-7 {
     -ms-flex: 0 0 58.333333%;
