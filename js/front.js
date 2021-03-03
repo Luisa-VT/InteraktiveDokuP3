@@ -54,12 +54,8 @@ setCookie('ppkcookie','testcookie',7);
 
 function changeImage() {
 
-    if (document.getElementById("imgClick").src == "img/about.jpg") 
+    if (document.getElementById("imgClick").src == "img/1HandlungMIT.png") 
     {
-        document.getElementById("imgClick").src = "img/portfolio-1.jpg";
-    }
-    else
-    {
-        document.getElementById("imgClick").src = "img/portfolio-2.jpg";
+        document.getElementById("imgClick").src = "img/2HandlungMIT.png";
     }
 }
