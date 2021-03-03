@@ -64,6 +64,7 @@ section {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
 }
 /*
 .fullscreen-bg {
