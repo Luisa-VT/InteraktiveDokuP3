@@ -129,7 +129,7 @@ body {
 .btnFalsch{
   position: absolute;
   top: 70%;
-  left: 25%;
+  left: 75%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   padding: 20px 20px;
