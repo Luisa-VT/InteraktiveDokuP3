@@ -58,7 +58,7 @@ function changeImage() {
     {
         document.getElementById("imgClick").src = "img/portfolio-1.jpg";
     }
-    else if
+    else
     {
         document.getElementById("imgClick").src = "img/portfolio-2.jpg";
     }
