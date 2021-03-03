@@ -112,7 +112,38 @@ body {
   background-color: #425463;
   opacity: 70%;
 }
-
+.btnMitte {
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.btnMitte:hover {
+  background-color: #425463;
+  opacity: 70%;
+}
+.btnRechts {
+  position: absolute;
+  top: 33%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.btnRechts:hover {
+  background-color: #425463;
+  opacity: 70%;
+}
 .btnRichtig{
   position: absolute;
   top: 70%;
@@ -130,6 +161,7 @@ body {
   background-color: #4c5e6e;
   opacity: 70%;
 }
+
 .btnFalsch{
   position: absolute;
   top: 70%;
