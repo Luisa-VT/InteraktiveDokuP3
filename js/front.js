@@ -52,15 +52,44 @@ function eraseCookie(name) {
 setCookie('ppkcookie','testcookie',7);
 
 
-function changeImage() {
-    document.getElementById("imgClick").src = "img/3_mit.png";
+function changeImageArmband() {
+    document.getElementById("imgClick").src = "img/armbänder.png";
+    document.getElementById("WearableTop").innerHTML = "Tasche";
+    document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
+    document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
+
+}
+function changeImageBauchtasche() {
+    document.getElementById("imgClick").src = "img/bauchtasche.png";
+    document.getElementById("WearableTop").innerHTML = "Tasche";
+    document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
+    document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
+
+}
+
+function changeImageFussband() {
+    document.getElementById("imgClick").src = "img/fußband.png";
+    document.getElementById("WearableTop").innerHTML = "Tasche";
+    document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
+    document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
+
+}
+function changeImageSchuhe() {
+    document.getElementById("imgClick").src = "img/schuhe.png";
+    document.getElementById("WearableTop").innerHTML = "Tasche";
+    document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
+    document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
+
+}
+function changeImageWeste() {
+    document.getElementById("imgClick").src = "img/weste.png";
     document.getElementById("WearableTop").innerHTML = "Tasche";
     document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
     document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
 
 }
 function goback(){
-    document.getElementById("imgClick").src = "img/3_ohne.png";
+    document.getElementById("imgClick").src = "img/mike.png";
     document.getElementById("WearableTop").innerHTML = "Beschreibung";
     document.getElementById("WearableText1").innerHTML = "In Zukunft können wir uns Vorstellen, dass Mike verschiendenste Wearables zum Reisen und beim Navigieren durch den Bahnhof benutzen könnte.";
     document.getElementById("WearableText2").innerHTML = "Klicke auf verschiedene Stellen auf dem Bild, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.";
