@@ -4,7 +4,6 @@
   width: 50%;
 }
 
-
 /* Style the button and place it in the middle of the container/image */
 .containern .btn {
   position: absolute;
@@ -276,4 +275,17 @@ h6,
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
+}
+
+.image {
+  opacity: 0.3;
+  display: grid;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.image:hover {
+  opacity: 1;
 }
