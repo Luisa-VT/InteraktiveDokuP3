@@ -151,8 +151,8 @@ body {
   float: center;
   display: block;
   color: #c8e2ed;
-  text-align: center;
   padding: 14px 16px;
+  left: 40%;
   text-decoration: none;
   font-size: 17px;
 }
