@@ -16,7 +16,6 @@ body {
 /* Style the button and place it in the middle of the container/image */
 .containern .btnArmband {
   position: absolute;
-  background-color: violet;
   top: 56%;
   left: 36%;
   transform: translate(-50%, -50%);
@@ -25,10 +24,10 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  background-color: transparent;
 }
 .containern .btnBauchtasche{
   position: absolute;
-  background-color: violet;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -37,6 +36,7 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  background-color: transparent;
 }
 
 .containern .btnFussband {
@@ -49,19 +49,19 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: violet;
+  background-color: transparent;
 }
 .containern .btnSchuhe{
   position: absolute;
-  top: 95%;
-  left: 55%;
+  top: 92%;
+  left: 43%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   padding: 12px 24px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: violet;
+  background-color: transparent;
 }
 .containern .btnWeste {
   position: absolute;
@@ -73,11 +73,23 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: violet;
+  background-color: transparent;
 }
 
 .containern .btnArmband:hover {
-  background-color: yellow;
+  background-color: lightblue;
+}
+.containern .btnBauchtasche:hover {
+  background-color: lightblue;
+}
+.containern .btnFussband:hover {
+  background-color: lightblue;
+}
+.containern .btnSchuhe:hover {
+  background-color: lightblue;
+}
+.containern .btnWeste:hover {
+  background-color: lightblue;
 }
 
 .bottomnavbar {
