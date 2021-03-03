@@ -17,38 +17,38 @@ body {
 .containern .btnArmband {
   position: absolute;
   top: 56%;
-  left: 36%;
+  left: 37%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  padding: 12px 24px;
+  padding: 22px 22px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: transparent;
 }
 .containern .btnBauchtasche{
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 52%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  padding: 12px 24px;
+  padding: 30px 50px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 30px;
   background-color: transparent;
 }
 
 .containern .btnFussband {
   position: absolute;
   top: 87%;
-  left: 55%;
+  left: 53%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  padding: 12px 24px;
+  padding: 25px 25px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: transparent;
 }
 .containern .btnSchuhe{
@@ -57,10 +57,10 @@ body {
   left: 43%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  padding: 12px 24px;
+  padding: 40px 40px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 30px;
   background-color: transparent;
 }
 .containern .btnWeste {
@@ -69,27 +69,32 @@ body {
   left: 52%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  padding: 12px 24px;
+  padding: 40px 40px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 30px;
   background-color: transparent;
 }
 
 .containern .btnArmband:hover {
-  background-color: lightblue;
+  background-color: #425463;
+  opacity: 70%;
 }
 .containern .btnBauchtasche:hover {
-  background-color: lightblue;
+  background-color: #425463;
+  opacity: 70%;
 }
 .containern .btnFussband:hover {
-  background-color: lightblue;
+  background-color: #425463;
+  opacity: 70%;
 }
 .containern .btnSchuhe:hover {
-  background-color: lightblue;
+  background-color: #425463;
+  opacity: 70%;
 }
 .containern .btnWeste:hover {
-  background-color: lightblue;
+  background-color: #425463;
+  opacity: 70%;
 }
 
 .bottomnavbar {
