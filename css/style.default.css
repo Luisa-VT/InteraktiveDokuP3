@@ -1,6 +1,6 @@
 @font-face {
   font-family: hda;
-  src: url(../fonts/HDADINOffMed.ttf);
+  src: url(../fonts/tahoma.ttf);
 }
 
 body {
@@ -42,7 +42,7 @@ body {
 .bottomnavbar a {
   float: center;
   display: block;
-  color: #f2f2f2;
+  color: #c8e2ed;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -51,8 +51,8 @@ body {
 
 /* Change the color of links on hover */
 .bottomnavbar a:hover {
-  background-color: rgb(44, 53, 65);
-  color: white;
+  background-color: rgb(#1a2128);
+  color: #c8e2ed;
 }
 
 /* Hide the link that should open and close the navbar on small screens */
@@ -87,14 +87,14 @@ section {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid #c8e2ed;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #fff;
+  color: #c8e2ed;
   font-size: 0.8rem;
   position: absolute;
   bottom: 5rem;
@@ -108,7 +108,7 @@ section {
 
 .scroll-btn:hover,
 .scroll-btn:focus {
-  color: #fff;
+  color: #c8e2ed;
   text-decoration: none;
 }
 
@@ -147,7 +147,7 @@ section {
 }
 
 .text-gray {
-  color: #ffffff !important;
+  color: #c8e2ed !important;
 }
 
 /*
@@ -218,7 +218,7 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Secular One", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: inherit;
