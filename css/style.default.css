@@ -26,7 +26,7 @@ body {
   border-radius: 20px;
   background-color: transparent;
 }
-.containern .btnBauchtasche{
+.containern .btnBauchtasche {
   position: absolute;
   top: 50%;
   left: 52%;
@@ -51,7 +51,7 @@ body {
   border-radius: 20px;
   background-color: transparent;
 }
-.containern .btnSchuhe{
+.containern .btnSchuhe {
   position: absolute;
   top: 92%;
   left: 43%;
@@ -375,4 +375,62 @@ h6,
 
 .image:hover {
   opacity: 1;
+}
+
+/** Code By WebDevTrick ( https://webdevtrick.com) **/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ef4b37;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 42px;
+  width: 40px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #1a2128;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #00ff79;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00ff79;
+}
+
+input:checked + .slider:before {
+  transform: translateX(52px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.centereddiv {
+  padding-top: 20px;
 }
