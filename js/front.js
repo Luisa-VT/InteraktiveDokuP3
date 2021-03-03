@@ -100,4 +100,11 @@ function goback() {
     "Klicke auf verschiedene Stellen auf dem Bild, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.";
 }
 
+function show_SoundMessage() {
+  var soundfile = "../sound/one_vibration.mp3";
+  var sound_id = "vibration";
+  var sound_message = "<";
+  sound_message += ">";
+  document.getElementById(sound_id).innerHTML = sound_message;
+}
 
