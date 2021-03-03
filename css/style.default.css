@@ -48,13 +48,18 @@ section {
   position: relative;
   padding: 6rem 0;
 }
-
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
 .hero {
   min-height: 100vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-  background: url(../img/guia_gif.gif);
   background-color: #1a2129;
   align-items: center;
   -ms-flex-pack: center;
