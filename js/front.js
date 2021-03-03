@@ -54,14 +54,14 @@ setCookie('ppkcookie','testcookie',7);
 
 function changeImageArmband() {
     document.getElementById("imgClick").src = "img/armbänder.png";
-    document.getElementById("WearableTop").innerHTML = "Tasche";
+    document.getElementById("WearableTop").innerHTML = "Armbänder";
     document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
     document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
 
 }
 function changeImageBauchtasche() {
     document.getElementById("imgClick").src = "img/bauchtasche.png";
-    document.getElementById("WearableTop").innerHTML = "Tasche";
+    document.getElementById("WearableTop").innerHTML = "Bauchtasche";
     document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
     document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
 
@@ -69,21 +69,21 @@ function changeImageBauchtasche() {
 
 function changeImageFussband() {
     document.getElementById("imgClick").src = "img/fußband.png";
-    document.getElementById("WearableTop").innerHTML = "Tasche";
+    document.getElementById("WearableTop").innerHTML = "Fußband";
     document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
     document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
 
 }
 function changeImageSchuhe() {
     document.getElementById("imgClick").src = "img/schuhe.png";
-    document.getElementById("WearableTop").innerHTML = "Tasche";
+    document.getElementById("WearableTop").innerHTML = "Schuhe";
     document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
     document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
 
 }
 function changeImageWeste() {
     document.getElementById("imgClick").src = "img/weste.png";
-    document.getElementById("WearableTop").innerHTML = "Tasche";
+    document.getElementById("WearableTop").innerHTML = "Weste";
     document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
     document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
 
