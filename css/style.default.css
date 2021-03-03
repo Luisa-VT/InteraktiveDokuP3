@@ -126,6 +126,10 @@ body {
   color: white;
   background-color: #232d36;
 }
+.btnRichtig:hover {
+  background-color: #4c5e6e;
+  opacity: 70%;
+}
 .btnFalsch{
   position: absolute;
   top: 70%;
@@ -138,6 +142,10 @@ body {
   border-radius: 20px;
   color: white;
   background-color: #232d36;
+}
+.btnFalsch:hover {
+  background-color: #4c5e6e;
+  opacity: 70%;
 }
 .bottomnavbar {
   background-color: #1a2128;
