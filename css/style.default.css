@@ -1,3 +1,12 @@
+@font-face {
+  font-family: hda;
+  src: url(../fonts/HDADINOffMed.ttf);
+}
+
+body {
+  font-family: hda;
+}
+
 /* Container needed to position the button. Adjust the width as needed */
 .containern {
   position: relative;
