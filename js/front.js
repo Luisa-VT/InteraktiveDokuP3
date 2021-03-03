@@ -106,12 +106,12 @@ function changeImageLinks(){
 }
 
 function changeImageRechts(){
-  document.getElementById("imgPrototyp3").src = "img/rechts_bauchtasche.png";
+  document.getElementById("imgPrototyp").src = "img/rechts_bauchtasche.png";
   document.getElementById("vib").play();
 
 }
 function changeImageMitte(){
-  document.getElementById("imgPrototyp2").src = "img/mitte_bauchtasche.png";
+  document.getElementById("imgPrototyp").src = "img/mitte_bauchtasche.png";
   document.getElementById("vib").play();
 }
 
