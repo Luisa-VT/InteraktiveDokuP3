@@ -1,21 +1,32 @@
-/*
-=========================================
-=========================================
+/* Container needed to position the button. Adjust the width as needed */
+.containern {
+  position: relative;
+  width: 50%;
+}
 
-   Screen - Multipurpose Template By Bootstrapious.com
 
-=========================================
-========================================= */
-/*
-*
-* =====================
-* GENERAL
-* =====================
-*
-*/
-/* Place the navbar at the bottom of the page, and make it stick */
+/* Style the button and place it in the middle of the container/image */
+.containern .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.containern .btn:hover {
+  background-color: black;
+}
+
 .bottomnavbar {
-  background-color: #1A2129;
+  background-color: #1a2128;
   overflow: hidden;
   position: fixed;
   bottom: 0;
@@ -39,7 +50,6 @@
   color: white;
 }
 
-
 /* Hide the link that should open and close the navbar on small screens */
 .bottomnavbar .icon {
   display: none;
@@ -49,16 +59,23 @@ section {
   position: relative;
   padding: 6rem 0;
 }
-
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 .hero {
-  background:#1A2129;
   min-height: 100vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
+  background-color: #1a2128;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
 }
 
 .scroll-btn {
@@ -84,7 +101,8 @@ section {
   z-index: 2;
 }
 
-.scroll-btn:hover, .scroll-btn:focus {
+.scroll-btn:hover,
+.scroll-btn:focus {
   color: #fff;
   text-decoration: none;
 }
@@ -115,21 +133,17 @@ section {
   font-size: 1rem !important;
 }
 
-
-
 .text-uppercase {
   letter-spacing: 0.08em;
 }
 
 .bg-blue {
-  background: #1A2129 !important;
+  background: #1a2128 !important;
 }
 
 .text-gray {
   color: #ffffff !important;
 }
-
-
 
 /*
 *
@@ -175,8 +189,6 @@ section {
   }
 }
 
-
-
 /*
  * 3. TYPE
  */
@@ -185,10 +197,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #1A2129;
+  color: #1a2128;
 }
-
-
 
 h1,
 h2,
@@ -267,7 +277,3 @@ h6,
   font-weight: 300;
   line-height: 1.2;
 }
-
-
-
-

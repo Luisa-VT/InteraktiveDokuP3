@@ -51,3 +51,15 @@ function eraseCookie(name) {
 
 setCookie('ppkcookie','testcookie',7);
 
+
+function changeImage() {
+
+    if (document.getElementById("imgClick").src == "img/about.jpg") 
+    {
+        document.getElementById("imgClick").src = "img/portfolio-1.jpg";
+    }
+    else
+    {
+        document.getElementById("imgClick").src = "img/portfolio-2.jpg";
+    }
+}
