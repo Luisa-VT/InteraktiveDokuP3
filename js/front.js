@@ -105,6 +105,16 @@ function changeImageLinks(){
     document.getElementById("vib").play();
 }
 
+function changeImageRechts(){
+  document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
+  document.getElementById("vib").play();
+
+}
+function changeImageMitte(){
+  document.getElementById("imgPrototyp").src = "img/mitte_bauchtasche.png";
+  document.getElementById("vib").play();
+}
+
 function richtig(){
     document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
     document.getElementById("vib").play();
