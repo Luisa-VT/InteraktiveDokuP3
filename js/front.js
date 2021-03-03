@@ -53,9 +53,15 @@ setCookie('ppkcookie','testcookie',7);
 
 
 function changeImage() {
+    document.getElementById("imgClick").src = "img/3_mit.png";
+    document.getElementById("WearableTop").innerHTML = "Tasche";
+    document.getElementById("WearableText1").innerHTML = "Taschen sind echt super.";
+    document.getElementById("WearableText2").innerHTML = "Tasche kann man an den Bahnhof mitnehmen";
 
-    if (document.getElementById("imgClick").src == "img/1HandlungMIT.png") 
-    {
-        document.getElementById("imgClick").src = "img/2HandlungMIT.png";
-    }
+}
+function goback(){
+    document.getElementById("imgClick").src = "img/3_ohne.png";
+    document.getElementById("WearableTop").innerHTML = "Beschreibung";
+    document.getElementById("WearableText1").innerHTML = "In Zukunft können wir uns Vorstellen, dass Mike verschiendenste Wearables zum Reisen und beim Navigieren durch den Bahnhof benutzen könnte.";
+    document.getElementById("WearableText2").innerHTML = "Klicke auf verschiedene Stellen auf dem Bild, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.";
 }
