@@ -108,3 +108,16 @@ function show_SoundMessage() {
   document.getElementById(sound_id).innerHTML = sound_message;
 }
 
+function changeImageLinks(){
+    document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
+    document.getElementById("vib").play();
+}
+
+function richtig(){
+    document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
+    document.getElementById("vib").play();
+}
+function falsch(){
+    document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
+    document.getElementById("vib").play();
+}

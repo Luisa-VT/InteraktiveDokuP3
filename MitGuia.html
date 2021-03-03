@@ -223,14 +223,18 @@
                 </header>
                 <div class="row">
                   <div class="col-lg-6">
-                    <img onclick="vibLinks()" src="img/Bauchtasche_novib.png" alt="MikeWearable" id="imgClick" class="img-fluid d-block mx-auto">
-                    <button onclick="changeImageArmband()" class="btnArmband"></button>
+                    <img onclick="vibLinks()" src="img/Bauchtasche_novib.png" alt="Prototyp" id="imgPrototyp" class="img-fluid d-block mx-auto">
+                    <audio id="vib" src="sound/one_vibration.mp3" preload="auto"></audio>
+                    <button onclick="changeImageLinks()" class="btnLinks"></button>
+                    <button onclick="changeImageMitte()" class="btn"></button>
+                    <button onclick="changeImageRechts()" class="btn"></button>
                   </div>
                   <div class="col-lg-6">
                     <p>
                       Jetzt bist du dran! Nachdem wir gezeigt haben was unser Guia System macht, kannst du es nun selber testen. Hier siehst du unsere Bauchtasche. Drücke auf die Vibrationsmotoren uns schaue was passiert. Außerdem kannst du unsere Vibrationsmuster für das erkennen des richtigen oder falschen Ziels testen.
                     </p>
-                  
+                    <button onclick="richtig()" class="btn"></button>
+                    <button onclick="falsch()" class="btn"></button>
                   </div>
                 </div>
               </div>
