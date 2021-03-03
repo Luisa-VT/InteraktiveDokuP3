@@ -94,3 +94,7 @@ function goback(){
     document.getElementById("WearableText1").innerHTML = "In Zukunft können wir uns Vorstellen, dass Mike verschiendenste Wearables zum Reisen und beim Navigieren durch den Bahnhof benutzen könnte.";
     document.getElementById("WearableText2").innerHTML = "Klicke auf verschiedene Stellen auf dem Bild, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.";
 }
+
+function vibLinks(){
+    document.getElementById("imgClick").src = "img/Bauchtasche_vib_links.png";
+}
