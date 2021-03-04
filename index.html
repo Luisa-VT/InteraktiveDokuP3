@@ -93,8 +93,6 @@
               </p>
             </div>
           </div>
-            <audio id="Zielgruppe" src="Audiospur/Zielgruppe.m4a" preload="auto"></audio>
-            <div alt="Startbutton für Audiounterstützung" onclick="zielgruppe()" class="btnPlay zusatz"></div>
         </div>
       </div>
     </section>
@@ -110,7 +108,13 @@
                 <p>
                   Das ist Mike. Mike hat eine Sehbehinderung, welche aufgrund einer Krankheit dazu geführt hat, dass er nun als vollständig blind gilt. Nichts desto trotz möchte er seine Familie in Heidelberg besuchen. Die Erblindung soll ihn dabei nicht aufhalten. Also kauft Mike sich Online ein Bahnticket nach Heidelberg und macht sich auf den Weg. <br>
                   </p>
+                  <img onclick="einleitung()" id="play-img0"
+                src="img/play.png" width="50" height="50" 
+                alt="..."
+                class="play-img"
+              />
               </div>
+             
               <div class="col-lg-6">
                 <img
                   src="img/1_Einleitung.png"
@@ -118,11 +122,14 @@
                   class="img-fluid d-block mx-auto"
                 />
               </div>
+            
             </div>
+            
             <audio id="EinleitungOHNE" src="sound/flo/Teil-1_Flo.wav" preload="auto"></audio>
-            <div alt="Startbutton für Audiounterstützung" onclick="einleitung()" class="btnPlay d-flex"></div>
           </div>
+          
         </div>
+       
       </section><section class="bg-blue">
           <div class="d-flex h-100 align-items-center">
             <div class="container text-center text-white">
@@ -135,6 +142,11 @@
                   <p>
                     Beim Ticketkauf hat er bereits die Information bekommen, dass sein Zug an Gleis 17 abfährt. Am Bahnhof angekommen versucht er sich erst einmal zu Orientieren. Er möchte wissen, wo er sich befindet, damit er weiß in welche Richtung er loslaufen muss. Das ist aber gar nicht so einfach. Die Situation, in der er sich befindet, ist für ihn noch relativ neu. Außerdem gibt es an dem Bahnhof so gut wie nichts, was ihm bei der Orientierung helfen würde. Er fühlt sich unwohl und ist darauf angewiesen Passanten zu fragen.
                   </p>
+                  <img onclick="ohne1()" id="play-img1"
+                  src="img/play.png" width="50" height="50" 
+                  alt="..."
+                  class="play-img"
+                />
                 </div>
                 <div class="col-lg-6">
                   <img
@@ -145,7 +157,6 @@
                 </div>
               </div>
               <audio id="1OHNE" src="sound/flo/Teil-2_Flo.wav" preload="auto"></audio>
-            <div alt="Startbutton für Audiounterstützung" onclick="ohne1()" class="btnPlay"></div>
             </div>
           </div>
         </section>
@@ -162,7 +173,11 @@
                   Nach mehreren Versuchen, blieb ein Passant stehen und gab Mike Auskunft darüber, dass er sich am Eingang bei Gleis 20 befindet und einfach geradeaus den Leitlinien folgen muss, um zum Gleis zu kommen. Mike bedankt sich und läuft los. Auf seinem Weg fühlt er sich sehr unsicher und ist nachdenklich, weil er genau weiß, dass er gleich wieder jemanden fragen muss, ob er an dem richtigen Gleis angekommen ist. Mike ist nicht gerne auf andere Leute angewiesen und diese Abhängigkeit führt dazu, dass seine Laune immer schlechter wird.
 
                 </p>
-
+                <img onclick="ohne2()" id="play-img2"
+                src="img/play.png" width="50" height="50" 
+                alt="..."
+                class="play-img"
+              />
               </div>
               <div class="col-lg-6">
                 <img
@@ -173,7 +188,6 @@
               </div>
             </div>
             <audio id="2OHNE" src="sound/flo/Teil-3_Flo.wav" preload="auto"></audio>
-            <div alt="Startbutton für Audiounterstützung" onclick="ohne2()" class="btnPlay"></div>
           </div>
         </div>
       </section>
@@ -183,12 +197,18 @@
             <div class="row align-items-center">
               <div class="col-lg-6 mb-4 mb-lg-0">
                 <header class="text-center">
-                  <h2 class="text-uppercase">Zug finden</h2>
+                  <h2 class="text-uppercase">Navigieren an den gewünschten Zielort</h2>
                 </header>
                 <p class="lead"></p>
                 <p>
                   Nachdem er dann jemanden gefragt hat ob er sich an Gleis 17 befindet, läuft Mike zu dem Zug, der an dem Gleis bereit steht und steigt ein. Er sucht sich einen Sitzplatz, den er mit ein bisschen Aufwand findet und setzt sich hin.
                 </p>
+              </p>
+              <img onclick="ohne3()" id="play-img3"
+              src="img/play.png" width="50" height="50" 
+              alt="..."
+              class="play-img"
+            />
               </div>
               <div class="col-lg-6">
                 <img
@@ -199,7 +219,6 @@
               </div>
             </div>
             <audio id="3OHNE" src="sound/flo/Teil-4_Flo.wav" preload="auto"></audio>
-            <div alt="Startbutton für Audiounterstützung" onclick="ohne3()" class="btnPlay"></div>
           </div>
         </div>
       </section>
@@ -209,13 +228,17 @@
               <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                   <header class="text-center">
-                    <h2 class="text-uppercase">Falschen Zug <br>feststellen</h2>
+                    <h2 class="text-uppercase">Ankommen</h2>
                   </header>
                   <p class="lead"></p>
                   <p>
                     Erst beim Losfahren des Zuges, bemerkt Mike durch eine Audioansage, dass er sich im falschen Zug befindet. Der Zug fährt nach Frankfurt und stand wohl noch aus Verspätungsgründen an dem Gleis, wo Mike eigentlich den Zug nach Heidelberg nehmen wollte.
                   </p>
-
+                  <img onclick="ohne4()" id="play-img4"
+                  src="img/play.png" width="50" height="50" 
+                  alt="..."
+                  class="play-img"
+                />
                 </div>
                 <div class="col-lg-6">
                   <img
@@ -227,7 +250,6 @@
                 </div>
               </div>
               <audio id="4OHNE" src="sound/flo/Teil-5_Flo.wav" preload="auto"></audio>
-            <div alt="Startbutton für Audiounterstützung" onclick="ohne4()" class="btnPlay"></div>
             </div>
           </div>
         </section>
@@ -244,6 +266,11 @@
                 <p>
                   Mike ist extrem unglücklich. Er ist in Frankfurt am Bahnhof gelandet und weiß gar nicht wohin mit sich. Seine Familie wartet vergeblich am Heidelberger Hauptbahnhof und macht sich Sorgen. Mike möchte erstmal nicht wieder alleine Zug fahren, er fühlt sich viel zu unsicher und hat große Angst, dass ihm so etwas nochmal passiert. 
                 </p>
+                <img onclick="ohne5()" id="play-img5"
+                src="img/play.png" width="50" height="50" 
+                alt="..."
+                class="play-img"
+              />
                 <p>
             
                 </p>
@@ -257,7 +284,7 @@
               </div>
             </div>
             <audio id="5OHNE" src="sound/flo/Teil-6_Flo.wav" preload="auto"></audio>
-            <div alt="Startbutton für Audiounterstützung" onclick="ohne5()" class="btnPlay"></div>
+
           </div>
         </div>
       </section>
@@ -277,8 +304,7 @@
                 </div>
                 <div class="col-lg-6">
                   <p>
-                    Jetzt bist du dran! Nachdem wir gezeigt haben, was unser Guia System macht, kannst du es nun selber testen. Hier siehst du unsere Bauchtasche. Drücke auf die Vibrationsmotoren und schaue was passiert. Außerdem kannst du unsere Vibrationsmuster für das Erkennen des richtigen oder falschen Ziels testen.
-
+                    Jetzt bist du dran! Nachdem wir gezeigt haben was unser Guia System macht, kannst du es nun selber testen. Hier siehst du unsere Bauchtasche. Drücke auf die Vibrationsmotoren uns schaue was passiert. Außerdem kannst du unsere Vibrationsmuster für das erkennen des richtigen oder falschen Ziels testen.
                   </p>
                   <audio id="vibvib" src="sound/salamisound-6942455-zig-zig-zig-vibration.mp3" preload="auto"></audio>
                   <audio id="vibvibvib" src="sound/salamisound-6762623-heardbeat-vibration.mp3" preload="auto"></audio>
@@ -286,8 +312,6 @@
                   <button onclick="falsch()" class="btnFalsch">Falscher Zug</button>
                 </div>
               </div>
-              <audio id="Prototyp" src="Audiospur/Prototyp.m4a" preload="auto"></audio>
-            <div alt="Startbutton für Audiounterstützung" onclick="prototyp()" class="btnPlay zusatz"></div>
             </div>
           </div>
         </section>
@@ -301,30 +325,23 @@
                     </header>
                     <p class="lead" id="WearableTop">Erklärung</p>
                     <p id="WearableText1">
-                      Was die Formgebung unseres Systems angeht, haben wir für die Zukunft ein paar Vorstellungen.  
+                      In Zukunft können wir uns Vorstellen, dass Mike verschiendenste Wearables zum Reisen und beim Navigieren durch den Bahnhof benutzen könnte.
                     </p>
                     <p id="WearableText2">
-                      Hover doch mal über die Person, um herauszufinden wie GUIA noch getragen werden könnte.
+                      Gehe mit deiner Maus doch ma über das Bild und klicke auf hervorgehobene Stellen, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.
                     </p>
                   </div>
                   <div class="col-lg-6">
                       <div class="containern">
                           <img onclick="goback()" src="img/mike.png" alt="MikeWearable" id="imgClick" class="img-fluid d-block mx-auto">
                           <button onclick="changeImageArmband()" class="btnArmband"></button>
-                          <audio id="Armband" src="Audiospur/Armband.m4a" preload="auto"></audio>
-                          <audio id="Bauchtasche" src="Audiospur/Bauchtasche.m4a" preload="auto"></audio>
                           <button onclick="changeImageBauchtasche()" class="btnBauchtasche"></button>
-                          <audio id="Fussband" src="Audiospur/Fußband.m4a" preload="auto"></audio>
                           <button onclick="changeImageFussband()" class="btnFussband"></button>
-                          <audio id="Schuhe" src="Audiospur/Schuh.m4a" preload="auto"></audio>
                           <button onclick="changeImageSchuhe()" class="btnSchuhe"></button>
-                          <audio id="Weste" src="Audiospur/Weste.m4a" preload="auto"></audio>
                           <button onclick="changeImageWeste()" class="btnWeste"></button>
                       </div>
                   </div>
                 </div>
-                <audio id="Formgebung" src="Audiospur/Formgebung.m4a" preload="auto"></audio>
-               <div alt="Startbutton für Audiounterstützung" onclick="formgebung()" class="btnPlay"></div>
               </div>
             </div>
           </section>
@@ -349,9 +366,9 @@
                     /></a>
                     </div>
                   <div onmouseover="changeGifs()" onclick="changeGifs()" class="col-lg-4 col-md-6 mb-4">
-                    <p>Wir haben die Idee eines Service entwickelt, der visuelle Informationen ins Taktile übersetzt. Wenn wir dieses Projekt weiterführen würden, streben wir anfangs eine Kooperation mit der Deutschen Bahn an. Der Bahnhof ist aber nicht der einzige Ort, an dem unser GUIA von Vorteil ist. Zukünftig könnte unser System auch dabei helfen, dass richtige Terminal am Flughafen, den richtigen Laden im Einkaufszentrum oder vielleicht die gewünschte Attraktion im Freizeitpark zu finden.
-                      Aktuell spezialisieren wir uns noch auf Späterblindete als Zielgruppe. Zukünftig könnten wir unser System erweitern, sodass alle Personen, die Hilfe bei der Orientierung benötigen, Unterstützung bekommen. 
-                      
+                    <p>Bei unserem Projekt handelt es sich grundsätzlich um ein Vorprojekt. Wir haben die Idee eines Service entwickelt, der visuelle Informationen ins Taktile übersetzt. Wenn wir dieses Projekt weiterführen würden, streben wir anfangs eine Kooperation mit der Deutschen Bahn an. Außerdem würden wir gerne eine eigenständige Position vertreten, sodass Lizenzen an verschiedene Anbieter verkauft werden können. Hierfür würden wir eine eigene Webseite und einen Social Media Account erstellen, um für Guia Marketing zu betreiben und darauf aufmerksam zu machen. Somit kann dieser Service auch in Flughäfen, Einkaufszentren, Freizeitparks, etc. verbaut und angewendet werden.
+
+                      Aktuell spezialisieren wir uns noch auf Späterblindete als Zielgruppe. Zukünftig, könnten wir unser System erweitern, sodass alle Personen, die Hilfe bei der Orientierung benötigen, Unterstützung bekommen. 
                       </p>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
@@ -365,8 +382,6 @@
                       /></a>
                       </div>
                 </div>
-                <audio id="Ausblick" src="Audiospur/Ausblick 2.m4a" preload="auto"></audio>
-              <div alt="Startbutton für Audiounterstützung" onclick="ausblick()" class="btnPlay zusatz"></div>
               </div>
             </div>
           </section>
