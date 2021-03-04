@@ -186,14 +186,12 @@ body {
   background-color: #4c5e6e;
   opacity: 70%;
 }
-.btnPlay {
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-	border-top: 25px solid transparent;
-	border-left: 50px solid white;
-	border-bottom: 25px solid transparent;
+.play-img {
+  opacity: 0.5;
+}
+
+.play-img:hover {
+  opacity: 1;
 }
 
 .bottomnavbar {
