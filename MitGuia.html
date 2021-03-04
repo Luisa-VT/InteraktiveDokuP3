@@ -196,6 +196,33 @@
           </div>
         </section>
         <section class="bg-blue">
+          <div class="d-flex h-100 align-items-center">
+            <div class="container text-center text-white">
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <header class="text-center">
+                    <h2 class="text-uppercase">Ankommen</h2>
+                  </header>
+                  <p class="lead">Navigieren an den gewünschten Zielort</p>
+                  <p>
+                      Wenige Minuten später, fährt ein neuer Zug in das Gleis ein. Als er sich dem Zug nähert, bekommt er wieder ein Vibrationssignal seiner Guia Bauchtasche. Dieses mal vermittelt sie ihm, dass dies der richtige Zug ist. Mike kann in den Zug einsteigen. Durch ein weiteres vibrieren, teilt die Bauchtasche mit, dass er sich neben einem freien Sitzplatz befindet, sodass Mike gar nicht lange danach suchen muss.
+                  </p>
+                  <p>
+                      Mike ist in Heidelberg angekommen und seine Familie erwartet ihn bereits. Er freut sich, dass Guia es ihm ermöglicht hat, eigenständig an seinem Ziel anzukommen und er freut sich schon auf weitere Ausflüge, die er mit der Bahn machen wird.
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  <img
+                    src="img/6_mit.png"
+                    alt="..."
+                    class="img-fluid d-block mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-blue">
             <div class="d-flex h-100 align-items-center">
               <div class="container text-center text-white">
                 <header class="text-center mb-5">
@@ -203,7 +230,7 @@
                 </header>
                 <div class="row">
                   <div class="col-lg-6">
-                    <img onclick="vibLinks()" src="img/Bauchtasche_novib.png" alt="Prototyp" id="imgPrototyp" class="img-fluid d-block mx-auto">
+                    <img onclick="Prototypback()" src="img/Bauchtasche_novib.png" alt="Prototyp" id="imgPrototyp" class="img-fluid d-block mx-auto">
                     <audio id="vib" src="sound/one_vibration.mp3" preload="auto"></audio>
                     <button onclick="changeImageLinks()"  class="btnLinks"></button>
                     <button onclick="changeImageMitte()"  class="btnMitte"></button>
@@ -213,6 +240,7 @@
                     <p>
                       Jetzt bist du dran! Nachdem wir gezeigt haben was unser Guia System macht, kannst du es nun selber testen. Hier siehst du unsere Bauchtasche. Drücke auf die Vibrationsmotoren uns schaue was passiert. Außerdem kannst du unsere Vibrationsmuster für das erkennen des richtigen oder falschen Ziels testen.
                     </p>
+                    <audio id="vibvib" src="sound/salamisound-6942455-zig-zig-zig-vibration.mp3" preload="auto"></audio>
                     <button onclick="richtig()" class="btnRichtig" alt="Vibrationsbutton Richtiger Zug">Richtiger Zug</button>
                     <button onclick="falsch()" class="btnFalsch" alt="Vibrationsbutton Falscher Zug">Falscher Zug</button>
                   </div>
@@ -250,45 +278,46 @@
               </div>
             </div>
           </section>
-           <section class="bg-blue">
-              <div class="d-flex h-100 align-items-center">
-                <div class="container text-center text-white">
-                  <header class="text-center mb-5">
-                    <h2 class="text-uppercase">Portfolio</h2>
-                  </header>
-                  <div class="row">
-                    <div class="col-lg-12 text-center">
+          <section class="bg-blue">
+            <div class="d-flex h-100 align-items-center">
+              <div class="container text-center text-white">
+                <header class="text-center mb-5">
+                  <h2 class="text-uppercase">AUSBLICK</h2>
+                </header>
+                <div class="row">
+                  <div class="col-lg-12 text-center">
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <a 
+                      data-title="My caption"
+                      class=""
+                      ><img onmouseover="changeGif1()" onclick="changeGif1()" id="gif1"
+                        src="img/shopping-cart.svg"
+                        
+                        alt="..."
+                        class="image"
+                    /></a>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                      <a
+                    <div onmouseover="changeGifs()" onclick="changeGifs()" class="col-lg-4 col-md-6 mb-4">
+                    <p>Bei unserem Projekt handelt es sich grundsätzlich um ein Vorprojekt. Wir haben die Idee eines Service entwickelt, der visuelle Informationen ins Taktile übersetzt. Wenn wir dieses Projekt weiterführen würden, streben wir anfangs eine Kooperation mit der Deutschen Bahn an. Außerdem würden wir gerne eine eigenständige Position vertreten, sodass Lizenzen an verschiedene Anbieter verkauft werden können. Hierfür würden wir eine eigene Webseite und einen Social Media Account erstellen, um für Guia Marketing zu betreiben und darauf aufmerksam zu machen. Somit kann dieser Service auch in Flughäfen, Einkaufszentren, Freizeitparks, etc. verbaut und angewendet werden.
+
+                      Aktuell spezialisieren wir uns noch auf Späterblindete als Zielgruppe. Zukünftig, könnten wir unser System erweitern, sodass alle Personen, die Hilfe bei der Orientierung benötigen, Unterstützung bekommen. 
+                      </p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a 
                         data-title="My caption"
                         class=""
-                        ><img
-                          src="img/mike.png"
+                        ><img onmouseover="changeGif2()" onclick="changeGif2()" id="gif2"
+                          src="img/flying.svg"
                           alt="..."
                           class="image"
                       /></a>
                       </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                      <p>Bei unserem Projekt handelt es sich grundsätzlich um ein Vorprojekt. WIr haben die Idee eines Service entwickelt, der visuelle Informationen ins Taktile übersetzt. Wenn wir dieses Projekt weiterführen würden, streben wir anfangs eine Kooperation mit der Deutschen Bahn an. Außerdem würden wir gerne eine eigenständige Position vertreten, sodass Lizenzen an verschiedene Anbieter verkauft werden können. Hierfür würden wir eine eigene Webseite und einen Social Media Account erstellen, um für Guia Marketing zu betreiben und darauf aufmerksam zu machen. Somit kann dieser Service auch in Flughäfen, Einkaufszentren, Freizeitparks, etc. verbaut und angewendet werden.
-
-                        Aktuell spezialisieren wir uns noch auf Späterblindete als Zielgruppe. Zukünftig, könnten wir unser System erweitern, sodass alle Personen, die Hilfe bei der Orientierung benötigen, Unterstützung bekommen. 
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <a
-                          data-title="My caption"
-                          class=""
-                          ><img
-                            src="img/mike.png"
-                            alt="..."
-                            class="image"
-                        /></a>
-                        </div>
-                  </div>
                 </div>
               </div>
-            </section>
+            </div>
+          </section>
     </div>
     <div class="bottomnavbar" id="myNavbar">
       

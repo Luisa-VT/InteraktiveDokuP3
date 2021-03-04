@@ -1,10 +1,10 @@
 $(function () {
-  $(".main").onepage_scroll({
+  let scroll = $(".main").onepage_scroll({
     sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
     easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
     // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
     animationTime: 700, // AnimationTime let you define how long each section takes to animate
-    pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+    pagination: false, // You can either show or hide the pagination. Toggle true for show, false for hide.
     updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
     beforeMove: function (index) {}, // This option accepts a callback function. The function will be called before the page moves.
     afterMove: function (index) {
@@ -19,6 +19,7 @@ $(function () {
   });
   var x = getCookie("lastpage");
   if (x) {
+    
     $(".main").moveTo(x);
   }
   lightbox.option({
@@ -99,9 +100,11 @@ function goback() {
   document.getElementById("WearableText2").innerHTML =
     "Klicke auf verschiedene Stellen auf dem Bild, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.";
 }
-
+function Prototypback(){
+  document.getElementById("imgPrototyp").src = "img/Bauchtasche_novib.png";
+}
 function changeImageLinks() {
-  document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
+  document.getElementById("imgPrototyp").src = "img/Bauchtasche_novib_links.png";
   document.getElementById("vib").play();
 }
 
@@ -115,30 +118,30 @@ function changeImageMitte() {
 }
 
 function richtig() {
-  document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
+  document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib.png";
   document.getElementById("vib").play();
+  setTimeout(makevib, 750);
 }
 function falsch() {
-  document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
-  document.getElementById("vib").play();
+  document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib.png";
+  document.getElementById("vibvib").play();
 }
 
-let gifOn1 = false;
 
 function changeGif1() {
-  if (gifOn1 == true) {
-    document.getElementById("gif1").src = "img/shopping-cart.svg";
-    gifOn1 = false;
-  } else {
-    document.getElementById("gif1").src = "img/shopping-cart.gif";
-    gifOn1 = true;
-  }
+  document.getElementById("gif1").src = "img/shopping-cart.gif";
 }
 
 function changeGif2() {
-  if (document.getElementById("gif2").src == "img/flying.gif") {
-    document.getElementById("gif2").src = "img/flying.svg";
-  } else {
-    document.getElementById("gif2").src = "img/flying.gif";
-  }
+  document.getElementById("gif2").src = "img/flying.gif";
+}
+
+function makevib(){
+  document.getElementById("vib").play();
+}
+
+
+function changeGifs(){
+  document.getElementById("gif2").src = "img/flying.svg";
+  document.getElementById("gif1").src = "img/shopping-cart.svg";
 }
