@@ -104,7 +104,7 @@ function Prototypback() {
 }
 function changeImageLinks() {
   document.getElementById("imgPrototyp").src =
-    "img/Bauchtasche_novib_links.png";
+    "img/Bauchtasche_vib_links.png";
   document.getElementById("vib").play();
 }
 
@@ -120,14 +120,12 @@ function changeImageMitte() {
 function richtig() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib.png";
   document.getElementById("vibvibvib").play();
-  setTimeout(5000);
-  Prototypback();
+  setTimeout(Prototypback, 4000);
 }
 function falsch() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib.png";
   document.getElementById("vibvib").play();
-  setTimeout(5000);
-  Prototypback();
+  setTimeout(Prototypback, 4000);
 }
 
 function changeGif1() {

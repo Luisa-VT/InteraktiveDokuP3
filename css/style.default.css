@@ -176,9 +176,8 @@ body {
   background-color: #232d36;
 }
 .btnPlay {
+  left: 50%;
   position: absolute;
-  left: 33%;
-  bottom: 25%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 	border-top: 25px solid transparent;
