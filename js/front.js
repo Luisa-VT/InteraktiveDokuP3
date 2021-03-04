@@ -19,7 +19,6 @@ $(function () {
   });
   var x = getCookie("lastpage");
   if (x) {
-    
     $(".main").moveTo(x);
   }
   lightbox.option({
@@ -100,11 +99,12 @@ function goback() {
   document.getElementById("WearableText2").innerHTML =
     "Klicke auf verschiedene Stellen auf dem Bild, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.";
 }
-function Prototypback(){
+function Prototypback() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_novib.png";
 }
 function changeImageLinks() {
-  document.getElementById("imgPrototyp").src = "img/Bauchtasche_novib_links.png";
+  document.getElementById("imgPrototyp").src =
+    "img/Bauchtasche_novib_links.png";
   document.getElementById("vib").play();
 }
 
@@ -119,14 +119,14 @@ function changeImageMitte() {
 
 function richtig() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib.png";
-  document.getElementById("vib").play();
-  setTimeout(makevib, 750);
+  document.getElementById("vibvibvib").play();
+  setTimeout(Prototypback(), 5000);
 }
 function falsch() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib.png";
   document.getElementById("vibvib").play();
+  setTimeout(Prototypback(), 5000);
 }
-
 
 function changeGif1() {
   document.getElementById("gif1").src = "img/shopping-cart.gif";
@@ -136,12 +136,11 @@ function changeGif2() {
   document.getElementById("gif2").src = "img/flying.gif";
 }
 
-function makevib(){
+function makevib() {
   document.getElementById("vib").play();
 }
 
-
-function changeGifs(){
+function changeGifs() {
   document.getElementById("gif2").src = "img/flying.svg";
   document.getElementById("gif1").src = "img/shopping-cart.svg";
 }
