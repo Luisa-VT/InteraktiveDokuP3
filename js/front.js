@@ -57,6 +57,7 @@ function changeImageArmband() {
     "Wie man es bereits von Smartwatches kennt, könnten wir GUIA auch in ein Armband implementieren.";
   document.getElementById("WearableText2").innerHTML =
     "An beiden Seiten könnten so auch klare Richtungsanweisungen gegeben werden.";
+    document.getElementById("Armband").play();
 }
 function changeImageBauchtasche() {
   document.getElementById("imgClick").src = "img/bauchtasche.png";
@@ -65,7 +66,11 @@ function changeImageBauchtasche() {
     "Bei unserem Prototypen haben wir uns für das Wearable “Bauchtasche entschieden”.";
   document.getElementById("WearableText2").innerHTML =
     "So konnten wir die Vibrationsmotoren gut am Körper verteilen und gleichzeitig die Technik in der Tasche verstauen, damit das Gerät tragbar ist. Alternativ wäre dies auch als Gürtel möglich.";
-}
+  setTimeout(playBauchtasche, 5000);
+  }
+  function playBauchtasche(){
+    document.getElementById("Bauchtasche").play()
+  }
 
 function changeImageFussband() {
   document.getElementById("imgClick").src = "img/fußband.png";
@@ -74,6 +79,7 @@ function changeImageFussband() {
     "Sehr unauffällig wäre ein Fußband, dass unter dem Hosenbein oder den Socken verschwindet.";
   document.getElementById("WearableText2").innerHTML =
     "";
+    document.getElementById("Fussband").play();
 }
 function changeImageSchuhe() {
   document.getElementById("imgClick").src = "img/schuhe.png";
@@ -82,6 +88,7 @@ function changeImageSchuhe() {
     "Eine Möglichkeit wäre ein Schuh mit einer agilen Sohle, welche sich an den Boden anpasst, und so eine Leitlinie über Vibration darstellen kann.";
   document.getElementById("WearableText2").innerHTML =
     "";
+    document.getElementById("Schuhe").play();
 }
 function changeImageWeste() {
   document.getElementById("imgClick").src = "img/weste.png";
@@ -90,6 +97,7 @@ function changeImageWeste() {
     "Vor allem für komplexere Vibrationsmuster, die über mehr Körperfläche verteilt werden müssten, ist eine Weste zum Unterziehen eine gute Möglichkeit.";
   document.getElementById("WearableText2").innerHTML =
     "";
+    document.getElementById("Weste").play();
 }
 function goback() {
   document.getElementById("imgClick").src = "img/mike.png";
@@ -186,4 +194,24 @@ function einleitungmit(){
   }
   function mit5(){
     document.getElementById("5MIT").play();
+  }
+
+  function ausblick(){
+    document.getElementById("Ausblick").play();
+  }
+
+  function einleitung(){
+    document.getElementById("Einleitung").play();
+  }
+
+  function formgebung(){
+    document.getElementById("Formgebung").play();
+  }
+
+  function prototyp(){
+    document.getElementById("Prototyp").play();
+  }
+
+  function zielgruppe(){
+    document.getElementById("Zielgruppe").play();
   }
