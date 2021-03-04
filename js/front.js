@@ -54,42 +54,42 @@ function changeImageArmband() {
   document.getElementById("imgClick").src = "img/armbänder.png";
   document.getElementById("WearableTop").innerHTML = "Armbänder";
   document.getElementById("WearableText1").innerHTML =
-    "Taschen sind echt super.";
+    "Wie man es bereits von Smartwatches kennt, könnten wir GUIA auch in ein Armband implementieren.";
   document.getElementById("WearableText2").innerHTML =
-    "Tasche kann man an den Bahnhof mitnehmen";
+    "An beiden Seiten könnten so auch klare Richtungsanweisungen gegeben werden.";
 }
 function changeImageBauchtasche() {
   document.getElementById("imgClick").src = "img/bauchtasche.png";
   document.getElementById("WearableTop").innerHTML = "Bauchtasche";
   document.getElementById("WearableText1").innerHTML =
-    "Taschen sind echt super.";
+    "Bei unserem Prototypen haben wir uns für das Wearable “Bauchtasche entschieden”.";
   document.getElementById("WearableText2").innerHTML =
-    "Tasche kann man an den Bahnhof mitnehmen";
+    "So konnten wir die Vibrationsmotoren gut am Körper verteilen und gleichzeitig die Technik in der Tasche verstauen, damit das Gerät tragbar ist. Alternativ wäre dies auch als Gürtel möglich.";
 }
 
 function changeImageFussband() {
   document.getElementById("imgClick").src = "img/fußband.png";
   document.getElementById("WearableTop").innerHTML = "Fußband";
   document.getElementById("WearableText1").innerHTML =
-    "Taschen sind echt super.";
+    "Sehr unauffällig wäre ein Fußband, dass unter dem Hosenbein oder den Socken verschwindet.";
   document.getElementById("WearableText2").innerHTML =
-    "Tasche kann man an den Bahnhof mitnehmen";
+    "";
 }
 function changeImageSchuhe() {
   document.getElementById("imgClick").src = "img/schuhe.png";
   document.getElementById("WearableTop").innerHTML = "Schuhe";
   document.getElementById("WearableText1").innerHTML =
-    "Taschen sind echt super.";
+    "Eine Möglichkeit wäre ein Schuh mit einer agilen Sohle, welche sich an den Boden anpasst, und so eine Leitlinie über Vibration darstellen kann.";
   document.getElementById("WearableText2").innerHTML =
-    "Tasche kann man an den Bahnhof mitnehmen";
+    "";
 }
 function changeImageWeste() {
   document.getElementById("imgClick").src = "img/weste.png";
   document.getElementById("WearableTop").innerHTML = "Weste";
   document.getElementById("WearableText1").innerHTML =
-    "Taschen sind echt super.";
+    "Vor allem für komplexere Vibrationsmuster, die über mehr Körperfläche verteilt werden müssten, ist eine Weste zum Unterziehen eine gute Möglichkeit.";
   document.getElementById("WearableText2").innerHTML =
-    "Tasche kann man an den Bahnhof mitnehmen";
+    "";
 }
 function goback() {
   document.getElementById("imgClick").src = "img/mike.png";
