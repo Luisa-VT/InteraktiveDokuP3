@@ -4,7 +4,7 @@ $(function () {
     easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
     // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
     animationTime: 700, // AnimationTime let you define how long each section takes to animate
-    pagination: false, // You can either show or hide the pagination. Toggle true for show, false for hide.
+    pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
     updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
     beforeMove: function (index) {}, // This option accepts a callback function. The function will be called before the page moves.
     afterMove: function (index) {
@@ -104,6 +104,7 @@ function goback() {
   document.getElementById("WearableText2").innerHTML =
     "Klicke auf verschiedene Stellen auf dem Bild, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.";
 }
+
 function Prototypback() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_novib.png";
 }
@@ -238,25 +239,82 @@ function ohne5() {
   }
 }
 
+let audiomit0 = false;
 function einleitungmit() {
-  document.getElementById("EinleitungMit").play();
+  if (audiomit0 == true) {
+    document.getElementById("play-mit0").src = "img/play.png";
+    document.getElementById("EinleitungMIT").pause();
+    audiomit0 = false;
+  } else {
+    document.getElementById("play-mit0").src = "img/pause.png";
+    document.getElementById("EinleitungMIT").play();
+    audiomit0 = true;
+  }
 }
+
+let audiomit1 = false;
 function mit1() {
-  document.getElementById("1MIT").play();
+  if (audiomit1 == true) {
+    document.getElementById("play-mit1").src = "img/play.png";
+    document.getElementById("MIT1").pause();
+    audiomit1 = false;
+  } else {
+    document.getElementById("play-mit1").src = "img/pause.png";
+    document.getElementById("MIT1").play();
+    audiomit1 = true;
+  }
 }
 
+let audiomit2 = false;
 function mit2() {
-  document.getElementById("2MIT").play();
+  if (audiomit2 == true) {
+    document.getElementById("play-mit2").src = "img/play.png";
+    document.getElementById("MIT2").pause();
+    audiomit2 = false;
+  } else {
+    document.getElementById("play-mit2").src = "img/pause.png";
+    document.getElementById("MIT2").play();
+    audiomit2 = true;
+  }
 }
 
+let audiomit3 = false;
 function mit3() {
-  document.getElementById("3MIT").play();
+  if (audiomit3 == true) {
+    document.getElementById("play-mit3").src = "img/play.png";
+    document.getElementById("MIT3").pause();
+    audiomit3 = false;
+  } else {
+    document.getElementById("play-mit3").src = "img/pause.png";
+    document.getElementById("MIT3").play();
+    audiomit3 = true;
+  }
 }
+
+let audiomit4 = false;
 function mit4() {
-  document.getElementById("4MIT").play();
+  if (audiomit4 == true) {
+    document.getElementById("play-mit4").src = "img/play.png";
+    document.getElementById("MIT4").pause();
+    audiomit4 = false;
+  } else {
+    document.getElementById("play-mit4").src = "img/pause.png";
+    document.getElementById("MIT4").play();
+    audiomit4 = true;
+  }
 }
+
+let audiomit5 = false;
 function mit5() {
-  document.getElementById("5MIT").play();
+  if (audiomit5 == true) {
+    document.getElementById("play-mit5").src = "img/play.png";
+    document.getElementById("MIT5").pause();
+    audiomit5 = false;
+  } else {
+    document.getElementById("play-mit5").src = "img/pause.png";
+    document.getElementById("MIT5").play();
+    audiomit5 = true;
+  }
 }
 
 let ausblickaudio = false;
@@ -272,19 +330,6 @@ function Ausblick() {
   }
 }
 
-let formgebungaudio = false;
-function formgebung() {
-  if (formgebungaudio == true) {
-    document.getElementById("play-formgebung").src = "img/play.png";
-    document.getElementById("FORMGEBUNG").pause();
-    formgebungaudio = false;
-  } else {
-    document.getElementById("play-formgebung").src = "img/pause.png";
-    document.getElementById("FORMGEBUNG").play();
-    formgebungaudio = true;
-  }
-}
-
 let prototypaudio = false;
 function prototyp() {
   if (prototypaudio == true) {
@@ -295,6 +340,51 @@ function prototyp() {
     document.getElementById("play-prototyp").src = "img/pause.png";
     document.getElementById("PROTOTYP").play();
     prototypaudio = true;
+  }
+}
+
+let formgebungaudio = false;
+function formgebung() {
+  if (formgebungaudio == true) {
+    document.getElementById("play-formgebung").src = "img/play.png";
+    if (document.getElementById("WearableTop").innerHTML == "Beschreibung") {
+      document.getElementById("FORMGEBUNG").pause();
+    } else if (document.getElementById("WearableTop").innerHTML == "Weste") {
+      document.getElementById("WESTE").pause();
+    } else if (
+      document.getElementById("WearableTop").innerHTML == "Armbänder"
+    ) {
+      document.getElementById("ARMBAND").pause();
+    } else if (
+      document.getElementById("WearableTop").innerHTML == "Bauchtasche"
+    ) {
+      document.getElementById("BAUCHTASCHE").pause();
+    } else if (document.getElementById("WearableTop").innerHTML == "Fußband") {
+      document.getElementById("FUßBAND").pause();
+    } else if (document.getElementById("WearableTop").innerHTML == "Schuhe") {
+      document.getElementById("SCHUH").pause();
+    }
+    formgebungaudio = false;
+  } else {
+    if (document.getElementById("WearableTop").innerHTML == "Beschreibung") {
+      document.getElementById("FORMGEBUNG").play();
+    } else if (document.getElementById("WearableTop").innerHTML == "Weste") {
+      document.getElementById("WESTE").play();
+    } else if (
+      document.getElementById("WearableTop").innerHTML == "Armbänder"
+    ) {
+      document.getElementById("ARMBAND").play();
+    } else if (
+      document.getElementById("WearableTop").innerHTML == "Bauchtasche"
+    ) {
+      document.getElementById("BAUCHTASCHE").play();
+    } else if (document.getElementById("WearableTop").innerHTML == "Fußband") {
+      document.getElementById("FUßBAND").play();
+    } else if (document.getElementById("WearableTop").innerHTML == "Schuhe") {
+      document.getElementById("SCHUH").play();
+    }
+    document.getElementById("play-formgebung").src = "img/pause.png";
+    formgebungaudio = true;
   }
 }
 
