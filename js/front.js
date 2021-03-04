@@ -104,7 +104,7 @@ function goback() {
   document.getElementById("WearableText2").innerHTML =
     "Klicke auf verschiedene Stellen auf dem Bild, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.";
 }
-
+//Prototyp
 function Prototypback() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_novib.png";
 }
