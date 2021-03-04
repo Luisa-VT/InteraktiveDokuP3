@@ -146,3 +146,46 @@ function changeGifs() {
   document.getElementById("gif2").src = "img/flying.svg";
   document.getElementById("gif1").src = "img/shopping-cart.svg";
 }
+
+//Audiospuren
+function einleitung(){
+document.getElementById("EinleitungOHNE").play();
+}
+function ohne1(){
+  document.getElementById("1OHNE").play();
+}
+
+function ohne2(){
+  document.getElementById("2OHNE").play();
+}
+
+function ohne3(){
+  document.getElementById("3OHNE").play();
+}
+function ohne4(){
+  document.getElementById("4OHNE").play();
+}
+function ohne5(){
+  document.getElementById("5OHNE").play();
+}
+
+function einleitungmit(){
+  document.getElementById("EinleitungMit").play();
+  }
+  function mit1(){
+    document.getElementById("1MIT").play();
+  }
+  
+  function mit2(){
+    document.getElementById("2MIT").play();
+  }
+  
+  function mit3(){
+    document.getElementById("3MIT").play();
+  }
+  function mit4(){
+    document.getElementById("4MIT").play();
+  }
+  function mit5(){
+    document.getElementById("5MIT").play();
+  }
