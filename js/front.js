@@ -245,16 +245,43 @@ function mit5() {
   document.getElementById("5MIT").play();
 }
 
-function ausblick() {
-  document.getElementById("Ausblick").play();
+let ausblickaudio = false;
+function Ausblick() {
+  if (ausblickaudio == true) {
+    document.getElementById("play-ausblick").src = "img/play.png";
+    document.getElementById("AUSBLICK").pause();
+    ausblickaudio = false;
+  } else {
+    document.getElementById("play-ausblick").src = "img/pause.png";
+    document.getElementById("AUSBLICK").play();
+    ausblickaudio = true;
+  }
 }
 
+let formgebungaudio = false;
 function formgebung() {
-  document.getElementById("Formgebung").play();
+  if (formgebungaudio == true) {
+    document.getElementById("play-formgebung").src = "img/play.png";
+    document.getElementById("FORMGEBUNG").pause();
+    formgebungaudio = false;
+  } else {
+    document.getElementById("play-formgebung").src = "img/pause.png";
+    document.getElementById("FORMGEBUNG").play();
+    formgebungaudio = true;
+  }
 }
 
+let prototypaudio = false;
 function prototyp() {
-  document.getElementById("Prototyp").play();
+  if (prototypaudio == true) {
+    document.getElementById("play-prototyp").src = "img/play.png";
+    document.getElementById("PROTOTYP").pause();
+    prototypaudio = false;
+  } else {
+    document.getElementById("play-prototyp").src = "img/pause.png";
+    document.getElementById("PROTOTYP").play();
+    prototypaudio = true;
+  }
 }
 
 function zielgruppe() {
