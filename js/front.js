@@ -148,44 +148,97 @@ function changeGifs() {
 }
 
 //Audiospuren
-function einleitung(){
-document.getElementById("EinleitungOHNE").play();
+let audio0 = false;
+function einleitung() {
+  if (audio0 == true) {
+    document.getElementById("play-img0").src = "img/play.png";
+    document.getElementById("EinleitungOHNE").pause();
+    audio0 = false;
+  } else {
+    document.getElementById("play-img0").src = "img/pause.png";
+    document.getElementById("EinleitungOHNE").play();
+    audio0 = true;
+  }
 }
-function ohne1(){
-  document.getElementById("1OHNE").play();
+let audio1 = false;
+function ohne1() {
+  if (audio1 == true) {
+    document.getElementById("play-img1").src = "img/play.png";
+    document.getElementById("1OHNE").pause();
+    audio1 = false;
+  } else {
+    document.getElementById("play-img1").src = "img/pause.png";
+    document.getElementById("1OHNE").play();
+    audio1 = true;
+  }
 }
 
-function ohne2(){
-  document.getElementById("2OHNE").play();
+let audio2 = false;
+function ohne2() {
+  if (audio2 == true) {
+    document.getElementById("play-img2").src = "img/play.png";
+    document.getElementById("2OHNE").pause();
+    audio2 = false;
+  } else {
+    document.getElementById("play-img2").src = "img/pause.png";
+    document.getElementById("2OHNE").play();
+    audio2 = true;
+  }
 }
 
-function ohne3(){
-  document.getElementById("3OHNE").play();
-}
-function ohne4(){
-  document.getElementById("4OHNE").play();
-}
-function ohne5(){
-  document.getElementById("5OHNE").play();
+function ohne3() {
+  if (audio3 == true) {
+    document.getElementById("play-img3").src = "img/play.png";
+    document.getElementById("3OHNE").pause();
+    audio3 = false;
+  } else {
+    document.getElementById("play-img3").src = "img/pause.png";
+    document.getElementById("3OHNE").play();
+    audio3 = true;
+  }
 }
 
-function einleitungmit(){
+function ohne4() {
+  if (audio4 == true) {
+    document.getElementById("play-img4").src = "img/play.png";
+    document.getElementById("4OHNE").pause();
+    audio4 = false;
+  } else {
+    document.getElementById("play-img4").src = "img/pause.png";
+    document.getElementById("4OHNE").play();
+    audio4 = true;
+  }
+}
+
+function ohne5() {
+  if (audio5 == true) {
+    document.getElementById("play-img5").src = "img/play.png";
+    document.getElementById("5OHNE").pause();
+    audio5 = false;
+  } else {
+    document.getElementById("play-img5").src = "img/pause.png";
+    document.getElementById("5OHNE").play();
+    audio5 = true;
+  }
+}
+
+function einleitungmit() {
   document.getElementById("EinleitungMit").play();
-  }
-  function mit1(){
-    document.getElementById("1MIT").play();
-  }
-  
-  function mit2(){
-    document.getElementById("2MIT").play();
-  }
-  
-  function mit3(){
-    document.getElementById("3MIT").play();
-  }
-  function mit4(){
-    document.getElementById("4MIT").play();
-  }
-  function mit5(){
-    document.getElementById("5MIT").play();
-  }
+}
+function mit1() {
+  document.getElementById("1MIT").play();
+}
+
+function mit2() {
+  document.getElementById("2MIT").play();
+}
+
+function mit3() {
+  document.getElementById("3MIT").play();
+}
+function mit4() {
+  document.getElementById("4MIT").play();
+}
+function mit5() {
+  document.getElementById("5MIT").play();
+}
