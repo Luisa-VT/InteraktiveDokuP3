@@ -67,6 +67,8 @@
                   </p>
             </div>
           </div>
+          <audio id="Zielgruppe" src="Audiospur/Zielgruppe.m4a" preload="auto"></audio>
+          <div alt="Startbutton für Audiounterstützung" onclick="zielgruppe()" class="btnPlay zusatz"></div>
         </div>
       </div>
     </section>
@@ -127,7 +129,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 mb-4 mb-lg-0">
                 <header class="text-center">
-                  <h2 class="text-uppercase">Auswählen des Ziels</h2>
+                  <h2 class="text-uppercase">Gleis finden</h2>
                 </header>
                 <p class="lead"></p>
                 <p>
@@ -154,7 +156,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 mb-4 mb-lg-0">
                 <header class="text-center">
-                  <h2 class="text-uppercase">Navigieren an den gewünschten Zielort</h2>
+                  <h2 class="text-uppercase">Falschen Zug <br>feststellen</h2>
                 </header>
                 <p class="lead"></p>
                 <p>
@@ -181,7 +183,7 @@
               <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                   <header class="text-center">
-                    <h2 class="text-uppercase">Ankommen</h2>
+                    <h2 class="text-uppercase">Richtigen Zug <br>feststellen</h2>
                   </header>
                   <p class="lead">Navigieren an den gewünschten Zielort</p>
                   <p>
@@ -251,7 +253,7 @@
                   </div>
                   <div class="col-lg-6">
                     <p>
-                      Jetzt bist du dran! Nachdem wir gezeigt haben was unser Guia System macht, kannst du es nun selber testen. Hier siehst du unsere Bauchtasche. Drücke auf die Vibrationsmotoren uns schaue was passiert. Außerdem kannst du unsere Vibrationsmuster für das erkennen des richtigen oder falschen Ziels testen.
+                      Jetzt bist du dran! Nachdem wir gezeigt haben, was unser Guia System macht, kannst du es nun selber testen. Hier siehst du unsere Bauchtasche. Drücke auf die Vibrationsmotoren und schaue was passiert. Außerdem kannst du unsere Vibrationsmuster für das Erkennen des richtigen oder falschen Ziels testen.
                     </p>
                     <audio id="vibvib" src="sound/salamisound-6942455-zig-zig-zig-vibration.mp3" preload="auto"></audio>
                     <audio id="vibvibvib" src="sound/salamisound-6762623-heardbeat-vibration.mp3" preload="auto"></audio>
@@ -259,6 +261,8 @@
                     <button onclick="falsch()" class="btnFalsch" alt="Vibrationsbutton Falscher Zug">Falscher Zug</button>
                   </div>
                 </div>
+                <audio id="Prototyp" src="Audiospur/Prototyp.m4a" preload="auto"></audio>
+            <div alt="Startbutton für Audiounterstützung" onclick="prototyp()" class="btnPlay zusatz"></div>
               </div>
             </div>
           </section>
@@ -272,23 +276,30 @@
                     </header>
                     <p class="lead" id="WearableTop">Erklärung</p>
                     <p id="WearableText1">
-                      In Zukunft können wir uns Vorstellen, dass Mike verschiendenste Wearables zum Reisen und beim Navigieren durch den Bahnhof benutzen könnte.
+                      Was die Formgebung unseres Systems angeht, haben wir für die Zukunft ein paar Vorstellungen. 
                     </p>
                     <p id="WearableText2">
-                      Gehe mit deiner Maus doch ma über das Bild und klicke auf hervorgehobene Stellen, um zu sehen, wie wir uns mögliche anwendungsfälle Vorstellen können.
+                      Hover doch mal über die Person, um herauszufinden wie GUIA noch getragen werden könnte. 
                     </p>
                   </div>
                   <div class="col-lg-6">
                       <div class="containern">
                           <img onclick="goback()" src="img/mike.png" alt="MikeWearable" id="imgClick" class="img-fluid d-block mx-auto">
                           <button onclick="changeImageArmband()" class="btnArmband"></button>
+                          <audio id="Armband" src="Audiospur/Armband.m4a" preload="auto"></audio>
+                          <audio id="Bauchtasche" src="Audiospur/Bauchtasche.m4a" preload="auto"></audio>
                           <button onclick="changeImageBauchtasche()" class="btnBauchtasche"></button>
+                          <audio id="Fussband" src="Audiospur/Fußband.m4a" preload="auto"></audio>
                           <button onclick="changeImageFussband()" class="btnFussband"></button>
+                          <audio id="Schuhe" src="Audiospur/Schuh.m4a" preload="auto"></audio>
                           <button onclick="changeImageSchuhe()" class="btnSchuhe"></button>
+                          <audio id="Weste" src="Audiospur/Weste.m4a" preload="auto"></audio>
                           <button onclick="changeImageWeste()" class="btnWeste"></button>
                       </div>
                   </div>
                 </div>
+                <audio id="Formgebung" src="Audiospur/Formgebung.m4a" preload="auto"></audio>
+               <div alt="Startbutton für Audiounterstützung" onclick="formgebung()" class="btnPlay"></div>
               </div>
             </div>
           </section>
@@ -313,9 +324,9 @@
                     /></a>
                     </div>
                     <div onmouseover="changeGifs()" onclick="changeGifs()" class="col-lg-4 col-md-6 mb-4">
-                    <p>Bei unserem Projekt handelt es sich grundsätzlich um ein Vorprojekt. Wir haben die Idee eines Service entwickelt, der visuelle Informationen ins Taktile übersetzt. Wenn wir dieses Projekt weiterführen würden, streben wir anfangs eine Kooperation mit der Deutschen Bahn an. Außerdem würden wir gerne eine eigenständige Position vertreten, sodass Lizenzen an verschiedene Anbieter verkauft werden können. Hierfür würden wir eine eigene Webseite und einen Social Media Account erstellen, um für Guia Marketing zu betreiben und darauf aufmerksam zu machen. Somit kann dieser Service auch in Flughäfen, Einkaufszentren, Freizeitparks, etc. verbaut und angewendet werden.
-
-                      Aktuell spezialisieren wir uns noch auf Späterblindete als Zielgruppe. Zukünftig, könnten wir unser System erweitern, sodass alle Personen, die Hilfe bei der Orientierung benötigen, Unterstützung bekommen. 
+                    <p>Wir haben die Idee eines Service entwickelt, der visuelle Informationen ins Taktile übersetzt. Wenn wir dieses Projekt weiterführen würden, streben wir anfangs eine Kooperation mit der Deutschen Bahn an. Der Bahnhof ist aber nicht der einzige Ort, an dem unser GUIA von Vorteil ist. Zukünftig könnte unser System auch dabei helfen, dass richtige Terminal am Flughafen, den richtigen Laden im Einkaufszentrum oder vielleicht die gewünschte Attraktion im Freizeitpark zu finden.
+                      Aktuell spezialisieren wir uns noch auf Späterblindete als Zielgruppe. Zukünftig könnten wir unser System erweitern, sodass alle Personen, die Hilfe bei der Orientierung benötigen, Unterstützung bekommen. 
+                      
                       </p>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
@@ -329,6 +340,8 @@
                       /></a>
                       </div>
                 </div>
+                <audio id="Ausblick" src="Audiospur/Ausblick 2.m4a" preload="auto"></audio>
+                <div alt="Startbutton für Audiounterstützung" onclick="ausblick()" class="btnPlay zusatz"></div>
               </div>
             </div>
           </section>

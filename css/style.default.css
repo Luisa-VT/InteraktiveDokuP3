@@ -6,7 +6,14 @@
 body {
   font-family: hda;
 }
-
+.zusatz {
+  bottom: 10%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+}
 /* Container needed to position the button. Adjust the width as needed */
 .containern {
   position: relative;
@@ -146,7 +153,7 @@ body {
 }
 .btnRichtig {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 25%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -154,7 +161,7 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  color: #c8e2ed;
+  color: white;
   background-color: #232d36;
 }
 .btnRichtig:hover {
@@ -164,7 +171,7 @@ body {
 
 .btnFalsch {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 75%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -172,8 +179,21 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  color: #c8e2ed;
+  color: white;
   background-color: #232d36;
+}
+.btnFalsch:hover {
+  background-color: #4c5e6e;
+  opacity: 70%;
+}
+.btnPlay {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+	border-top: 25px solid transparent;
+	border-left: 50px solid white;
+	border-bottom: 25px solid transparent;
 }
 
 .bottomnavbar {
@@ -505,12 +525,4 @@ input:checked + .slider:before {
 
 .centereddiv {
   padding-top: 20px;
-}
-
-.play-img {
-  opacity: 0.5;
-}
-
-.play-img:hover {
-  opacity: 1;
 }

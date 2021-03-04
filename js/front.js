@@ -54,42 +54,50 @@ function changeImageArmband() {
   document.getElementById("imgClick").src = "img/armbänder.png";
   document.getElementById("WearableTop").innerHTML = "Armbänder";
   document.getElementById("WearableText1").innerHTML =
-    "Taschen sind echt super.";
+    "Wie man es bereits von Smartwatches kennt, könnten wir GUIA auch in ein Armband implementieren.";
   document.getElementById("WearableText2").innerHTML =
-    "Tasche kann man an den Bahnhof mitnehmen";
+    "An beiden Seiten könnten so auch klare Richtungsanweisungen gegeben werden.";
+    document.getElementById("Armband").play();
 }
 function changeImageBauchtasche() {
   document.getElementById("imgClick").src = "img/bauchtasche.png";
   document.getElementById("WearableTop").innerHTML = "Bauchtasche";
   document.getElementById("WearableText1").innerHTML =
-    "Taschen sind echt super.";
+    "Bei unserem Prototypen haben wir uns für das Wearable “Bauchtasche entschieden”.";
   document.getElementById("WearableText2").innerHTML =
-    "Tasche kann man an den Bahnhof mitnehmen";
-}
+    "So konnten wir die Vibrationsmotoren gut am Körper verteilen und gleichzeitig die Technik in der Tasche verstauen, damit das Gerät tragbar ist. Alternativ wäre dies auch als Gürtel möglich.";
+  setTimeout(playBauchtasche, 5000);
+  }
+  function playBauchtasche(){
+    document.getElementById("Bauchtasche").play()
+  }
 
 function changeImageFussband() {
   document.getElementById("imgClick").src = "img/fußband.png";
   document.getElementById("WearableTop").innerHTML = "Fußband";
   document.getElementById("WearableText1").innerHTML =
-    "Taschen sind echt super.";
+    "Sehr unauffällig wäre ein Fußband, dass unter dem Hosenbein oder den Socken verschwindet.";
   document.getElementById("WearableText2").innerHTML =
-    "Tasche kann man an den Bahnhof mitnehmen";
+    "";
+    document.getElementById("Fussband").play();
 }
 function changeImageSchuhe() {
   document.getElementById("imgClick").src = "img/schuhe.png";
   document.getElementById("WearableTop").innerHTML = "Schuhe";
   document.getElementById("WearableText1").innerHTML =
-    "Taschen sind echt super.";
+    "Eine Möglichkeit wäre ein Schuh mit einer agilen Sohle, welche sich an den Boden anpasst, und so eine Leitlinie über Vibration darstellen kann.";
   document.getElementById("WearableText2").innerHTML =
-    "Tasche kann man an den Bahnhof mitnehmen";
+    "";
+    document.getElementById("Schuhe").play();
 }
 function changeImageWeste() {
   document.getElementById("imgClick").src = "img/weste.png";
   document.getElementById("WearableTop").innerHTML = "Weste";
   document.getElementById("WearableText1").innerHTML =
-    "Taschen sind echt super.";
+    "Vor allem für komplexere Vibrationsmuster, die über mehr Körperfläche verteilt werden müssten, ist eine Weste zum Unterziehen eine gute Möglichkeit.";
   document.getElementById("WearableText2").innerHTML =
-    "Tasche kann man an den Bahnhof mitnehmen";
+    "";
+    document.getElementById("Weste").play();
 }
 function goback() {
   document.getElementById("imgClick").src = "img/mike.png";
@@ -104,7 +112,7 @@ function Prototypback() {
 }
 function changeImageLinks() {
   document.getElementById("imgPrototyp").src =
-    "img/Bauchtasche_novib_links.png";
+    "img/Bauchtasche_vib_links.png";
   document.getElementById("vib").play();
 }
 
@@ -120,14 +128,12 @@ function changeImageMitte() {
 function richtig() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib.png";
   document.getElementById("vibvibvib").play();
-  setTimeout(5000);
-  Prototypback();
+  setTimeout(Prototypback, 4000);
 }
 function falsch() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib.png";
   document.getElementById("vibvib").play();
-  setTimeout(5000);
-  Prototypback();
+  setTimeout(Prototypback, 4000);
 }
 
 function changeGif1() {
@@ -148,97 +154,64 @@ function changeGifs() {
 }
 
 //Audiospuren
-let audio0 = false;
-function einleitung() {
-  if (audio0 == true) {
-    document.getElementById("play-img0").src = "img/play.png";
-    document.getElementById("EinleitungOHNE").pause();
-    audio0 = false;
-  } else {
-    document.getElementById("play-img0").src = "img/pause.png";
-    document.getElementById("EinleitungOHNE").play();
-    audio0 = true;
-  }
+function einleitung(){
+document.getElementById("EinleitungOHNE").play();
 }
-let audio1 = false;
-function ohne1() {
-  if (audio1 == true) {
-    document.getElementById("play-img1").src = "img/play.png";
-    document.getElementById("1OHNE").pause();
-    audio1 = false;
-  } else {
-    document.getElementById("play-img1").src = "img/pause.png";
-    document.getElementById("1OHNE").play();
-    audio1 = true;
-  }
+function ohne1(){
+  document.getElementById("1OHNE").play();
 }
 
-let audio2 = false;
-function ohne2() {
-  if (audio2 == true) {
-    document.getElementById("play-img2").src = "img/play.png";
-    document.getElementById("2OHNE").pause();
-    audio2 = false;
-  } else {
-    document.getElementById("play-img2").src = "img/pause.png";
-    document.getElementById("2OHNE").play();
-    audio2 = true;
-  }
+function ohne2(){
+  document.getElementById("2OHNE").play();
 }
 
-function ohne3() {
-  if (audio3 == true) {
-    document.getElementById("play-img3").src = "img/play.png";
-    document.getElementById("3OHNE").pause();
-    audio3 = false;
-  } else {
-    document.getElementById("play-img3").src = "img/pause.png";
-    document.getElementById("3OHNE").play();
-    audio3 = true;
-  }
+function ohne3(){
+  document.getElementById("3OHNE").play();
+}
+function ohne4(){
+  document.getElementById("4OHNE").play();
+}
+function ohne5(){
+  document.getElementById("5OHNE").play();
 }
 
-function ohne4() {
-  if (audio4 == true) {
-    document.getElementById("play-img4").src = "img/play.png";
-    document.getElementById("4OHNE").pause();
-    audio4 = false;
-  } else {
-    document.getElementById("play-img4").src = "img/pause.png";
-    document.getElementById("4OHNE").play();
-    audio4 = true;
-  }
-}
-
-function ohne5() {
-  if (audio5 == true) {
-    document.getElementById("play-img5").src = "img/play.png";
-    document.getElementById("5OHNE").pause();
-    audio5 = false;
-  } else {
-    document.getElementById("play-img5").src = "img/pause.png";
-    document.getElementById("5OHNE").play();
-    audio5 = true;
-  }
-}
-
-function einleitungmit() {
+function einleitungmit(){
   document.getElementById("EinleitungMit").play();
-}
-function mit1() {
-  document.getElementById("1MIT").play();
-}
+  }
+  function mit1(){
+    document.getElementById("1MIT").play();
+  }
+  
+  function mit2(){
+    document.getElementById("2MIT").play();
+  }
+  
+  function mit3(){
+    document.getElementById("3MIT").play();
+  }
+  function mit4(){
+    document.getElementById("4MIT").play();
+  }
+  function mit5(){
+    document.getElementById("5MIT").play();
+  }
 
-function mit2() {
-  document.getElementById("2MIT").play();
-}
+  function ausblick(){
+    document.getElementById("Ausblick").play();
+  }
 
-function mit3() {
-  document.getElementById("3MIT").play();
-}
-function mit4() {
-  document.getElementById("4MIT").play();
-}
-function mit5() {
-  document.getElementById("5MIT").play();
-}
+  function einleitung(){
+    document.getElementById("Einleitung").play();
+  }
+
+  function formgebung(){
+    document.getElementById("Formgebung").play();
+  }
+
+  function prototyp(){
+    document.getElementById("Prototyp").play();
+  }
+
+  function zielgruppe(){
+    document.getElementById("Zielgruppe").play();
+  }
