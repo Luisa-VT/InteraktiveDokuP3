@@ -98,8 +98,8 @@ body {
 }
 .btnLinks {
   position: absolute;
-  top: 33%;
-  left: 15%;
+  top: 34%;
+  left: 14%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   padding: 20px 20px;
@@ -114,8 +114,8 @@ body {
 }
 .btnMitte {
   position: absolute;
-  top: 29%;
-  left: 50%;
+  top: 26%;
+  left: 49%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   padding: 20px 20px;
@@ -130,7 +130,7 @@ body {
 }
 .btnRechts {
   position: absolute;
-  top: 33%;
+  top: 34%;
   left: 85%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -351,8 +351,11 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #1a2128;
+  text-align: left;
 }
-
+p {
+  text-align: left;
+}
 h1,
 h2,
 h3,
