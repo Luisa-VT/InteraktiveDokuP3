@@ -150,6 +150,20 @@ function changeGifs() {
 }
 
 //Audiospuren
+
+let kontextaudio = false;
+function kontext() {
+  if (kontextaudio == true) {
+    document.getElementById("play-kontext").src = "img/play.png";
+    document.getElementById("KONTEXT").pause();
+    kontextaudio = false;
+  } else {
+    document.getElementById("play-kontext").src = "img/pause.png";
+    document.getElementById("KONTEXT").play();
+    kontextaudio = true;
+  }
+}
+
 let audio0 = false;
 function einleitung() {
   if (audio0 == true) {
@@ -284,6 +298,15 @@ function prototyp() {
   }
 }
 
+let zielgruppeaudio = false;
 function zielgruppe() {
-  document.getElementById("Zielgruppe").play();
+  if (zielgruppeaudio == true) {
+    document.getElementById("play-zielgruppe").src = "img/play.png";
+    document.getElementById("ZIELGRUPPE").pause();
+    zielgruppeaudio = false;
+  } else {
+    document.getElementById("play-zielgruppe").src = "img/pause.png";
+    document.getElementById("ZIELGRUPPE").play();
+    zielgruppeaudio = true;
+  }
 }

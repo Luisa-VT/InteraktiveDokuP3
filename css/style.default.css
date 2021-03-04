@@ -194,6 +194,16 @@ body {
   opacity: 1;
 }
 
+.play-img-prototyp {
+  position: relative;
+  top: 21%;
+  opacity: 0.5;
+}
+
+.play-img-prototyp:hover {
+  opacity: 1;
+}
+
 .bottomnavbar {
   background-color: transparent;
   color: #c8e2ed;
