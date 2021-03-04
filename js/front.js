@@ -120,12 +120,14 @@ function changeImageMitte() {
 function richtig() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib.png";
   document.getElementById("vibvibvib").play();
-  setTimeout(Prototypback(), 5000);
+  setTimeout(5000);
+  Prototypback();
 }
 function falsch() {
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib.png";
   document.getElementById("vibvib").play();
-  setTimeout(Prototypback(), 5000);
+  setTimeout(5000);
+  Prototypback();
 }
 
 function changeGif1() {
