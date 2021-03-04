@@ -104,7 +104,7 @@ function Prototypback(){
   document.getElementById("imgPrototyp").src = "img/Bauchtasche_novib.png";
 }
 function changeImageLinks() {
-  document.getElementById("imgPrototyp").src = "img/Bauchtasche_novib_links.png";
+  document.getElementById("imgPrototyp").src = "img/Bauchtasche_vib_links.png";
   document.getElementById("vib").play();
 }
 
@@ -144,4 +144,11 @@ function makevib(){
 function changeGifs(){
   document.getElementById("gif2").src = "img/flying.svg";
   document.getElementById("gif1").src = "img/shopping-cart.svg";
+}
+
+
+
+//Audiospuren
+function einleitung(){
+document.getElementById("EinleitungOHNE").play();
 }
